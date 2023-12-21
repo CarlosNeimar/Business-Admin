@@ -1,0 +1,12 @@
+paleta de cores padrão:
+
+Cor principal => #69F041
+
+Cor tema:
+
+Black => #222222  // #333333
+
+White => #f2f2f2  // #e0e0e0
+ 
+
+
