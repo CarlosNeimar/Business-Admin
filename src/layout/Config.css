@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--minhafont);
+}
+
+
+
+.Cardconfig{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.9s ease-out;
+    opacity: 1;
+}
+
+.hidden{
+    position: absolute;
+    opacity: 0;
+    top: 30%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.cardcontainer{
+    position: relative;
+    min-width: 50%;
+    min-height: 25%;
+    background-color: #efefef;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    top: 14px;
+    color: black;
+    border-radius: 30px;
+}
+
+.configtitle{
+    position: relative;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1.5px;
+    padding: 8px;
+    border-color: black;
+    border-style: solid;
+    justify-content: center;
+}
+
+.configicon{
+position: relative;
+ padding-left: 20px;
+ width: 70px;
+ height: 40px;
+}
+
+.temas{
+    padding-top: 15px;
+}

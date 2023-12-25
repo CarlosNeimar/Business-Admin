@@ -1,3 +1,34 @@
+:root{
+  --cor-principal: #69F041;
+  
+  /* Tema white */
+  --bg-primary: #f2f2f2;
+  --bg-secondary: #e0e0e0;
+  --bg-contrast:#222222;
+  --bg-contrast-secondary:#333333;
+  --text:#222222;
+
+
+
+  /* Fonte */
+
+  --minhafont: 'Merriweather', serif;
+
+}
+
+[data-tema="dark"]{
+  --cor-principal: #69F041;
+  /* Tema black */
+  --bg-primary: #222222;
+  --bg-secondary: #333333;
+  --bg-contrast:#f2f2f2;
+  --bg-contrast-secondary:#e0e0e0;
+  --text:#f2f2f2;
+  /* Fonte */
+  --minhafont: 'Merriweather', serif;
+}
+
+
 *{
   padding: 0;
   margin: 0;
@@ -6,7 +37,7 @@
 }
 
 html, body, #root {
-  background: linear-gradient(to bottom, #222222, #333333);
-  color: #f2f2f2;
+  /* background: linear-gradient(to bottom, #222222, #333333);
+  color: #f2f2f2; */
   height: 100%;
 }
