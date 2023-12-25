@@ -7,6 +7,7 @@
   --bg-contrast:#222222;
   --bg-contrast-secondary:#333333;
   --text:#222222;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 
 
@@ -24,6 +25,10 @@
   --bg-contrast:#f2f2f2;
   --bg-contrast-secondary:#e0e0e0;
   --text:#f2f2f2;
+  --shadow: 0 0 10px rgba(255, 255, 255, 1);
+
+
+
   /* Fonte */
   --minhafont: 'Merriweather', serif;
 }

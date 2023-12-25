@@ -32,11 +32,11 @@
     position: relative;
     min-width: 50%;
     min-height: 25%;
-    background-color: #efefef;
+    background-color: var(--bg-primary);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:var(--shadow);
     top: 14px;
-    color: black;
+    color: var(--text);
     border-radius: 30px;
 }
 
@@ -84,4 +84,20 @@
 
 .botaoX{
     cursor: pointer;
+    background-color: transparent;
+    color: var(--text);
+}
+
+
+.lipers{
+    padding: 4px;
+    padding-left: 15px;
+    list-style-type: none;
+    list-style-image: none;
+    list-style-position: inside;
+    text-decoration: none;
+}
+
+.lipers a {
+    color: var(--cor-principal);
 }

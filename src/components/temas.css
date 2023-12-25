@@ -78,11 +78,11 @@
     letter-spacing: 0.002em;
   }
   input[type="checkbox"]:checked {
-    background: #0071e3;
+    background: #69F041;
   }
   @media (prefers-color-scheme: light) {
     input[type="checkbox"]:checked {
-      box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 10px 10px 15px -10px #0047b9, inset -10px -10px 15px -10px #0047b9;
+      box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5), inset 10px 10px 15px -10px #69F041, inset -10px -10px 15px -10px #69F041;
     }
   }
   input[type="checkbox"]:checked::before {
