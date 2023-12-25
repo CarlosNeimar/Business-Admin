@@ -51,15 +51,38 @@
     border-color: black;
     border-style: solid;
     justify-content: center;
+    display: flex;
+}
+
+.configtitle h1 {
+    font-size: 43px;
 }
 
 .configicon{
-position: relative;
- padding-left: 20px;
+ position: relative;
+ padding: 0;
+ margin: 0;
+ top: -15px;
  width: 70px;
  height: 40px;
 }
 
 .temas{
     padding-top: 15px;
+}
+
+.escolhatema{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.escolhatema span{
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.botaoX{
+    cursor: pointer;
 }

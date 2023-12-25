@@ -4,8 +4,7 @@ export const Temas = ({ heandlechange, ischecked }) =>{
 
     return(
     <div className="troca-container">
-        <input type="checkbox" id="check" className="trocando" onChange={heandlechange} checked={ischecked}/>
-        <label htmlFor="check">Dark mode</label>
+        <input type="checkbox" id="toggle" className="trocando" onChange={heandlechange} checked={ischecked}/>
     </div>
     )
 }
