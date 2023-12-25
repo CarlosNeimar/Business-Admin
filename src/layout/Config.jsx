@@ -12,24 +12,6 @@ const Config = ({ isVisible, toggleVisibility, isdark, setisdark}) => {
     toggleVisibility();
   }; 
 
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (isVisible && !event.target.closest('.config-container')) {
-        toggleVisibility();
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isVisible, toggleVisibility]);
-
-
-
-
   return (
     <div>
       <div className={componentClass}>
