@@ -1,12 +1,27 @@
 paleta de cores padrão:
 
-Cor principal => #69F041
+    Variaveis css:
+  
+  
 
-Cor tema:
 
-Black => #222222  // #333333
+ Fonte: --minhafont: 'Merriweather', serif;
+ Cor principal do site: --cor-principal: #69F041;
+  
+  Tema branco:
 
-White => #f2f2f2  // #e0e0e0
- 
+  background ->                     --bg-primary: #f2f2f2
+  background 2 ->                   --bg-secondary: #e0e0e0
+  contraste do background ->        --bg-contrast:#222222
+  contraste do background 2 ->      --bg-contrast-secondary:#333333
+  cor do texto ->                   --text:#222222
+  sombra ->                         --shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 
+  Tema escuro:
+  background ->                     --bg-primary: #222222
+  background 2 ->                   --bg-secondary: #333333
+  contraste do background ->        --bg-contrast:#f2f2f2
+  contraste do background 2 ->      --bg-contrast-secondary:#e0e0e0
+  cor do texto ->                   --text:#f2f2f2
+  sombra ->                         --shadow: 0 0 10px rgba(255, 255, 255, 1)
 
