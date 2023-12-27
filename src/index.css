@@ -1,6 +1,7 @@
 :root{
   --cor-principal: #69F041;
-  
+  --cards-claro: rgba(173, 216, 230, 0.8);
+
   /* Tema white */
   --bg-primary: #f2f2f2;
   --bg-secondary: #e0e0e0;

@@ -4,3 +4,80 @@
     background-color: var(--bg-primary);
     color: var(--text);
 }
+
+.contentnew{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardnegocios{
+    width: 400px;
+    height: 80vh;
+    background-color: var(--cards-claro);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.artnegocios{
+    display: flex;
+}
+.titlenew{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.titlecard{
+    /* color: var(--text); */
+    color: #222;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.cabecalhocard h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.cabecalhocard h3 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.iconscreate{
+    position: relative;
+    transform: translateY(40px);
+    justify-content: center;
+}
+
+.iconetype{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    color: #222;
+    transition: color 0.3s ease-in-out;
+}
+
+.cardnegocios:hover{
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    background-color: var(--cor-principal);
+    color: white;
+    cursor: pointer;
+}
+.cardnegocios:hover .titlecard{
+    color: white;
+}
+.cardnegocios:hover .iconetype{
+    color: white;
+}

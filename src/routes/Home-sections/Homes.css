@@ -57,7 +57,7 @@
 .cardvamos{
     width: 80%;
     height: 80%;
-    background-color: rgba(173, 216, 230, 0.8);
+    background-color:var(--cards-claro);
     backdrop-filter: blur(10px);
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.6);
 }

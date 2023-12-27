@@ -5,8 +5,10 @@ paleta de cores padrão:
   
 
 
- Fonte: --minhafont: 'Merriweather', serif;
- Cor principal do site: --cor-principal: #69F041;
+ Fonte: --minhafont: 'Merriweather', serif
+ Cor principal do site: --cor-principal: #69F041
+ Azul claro (Usado em alguns casos) --cards-claro: rgba(173, 216, 230, 0.8) 
+
   
   Tema branco:
 
