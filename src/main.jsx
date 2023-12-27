@@ -11,8 +11,15 @@ import{ createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from './routes/Home.jsx';
 import Dashboard from './routes/Dashboard.jsx';
 import ErroPage from './routes/Erropage.jsx';
+import Novonegocio from './routes/Novonegocio.jsx';
+
+
 
 const router = createBrowserRouter([
+
+
+
+  
   {
     path: "/",
     element: <App />,
@@ -25,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "dashboard",
         element: <Dashboard />
+      },
+      {
+        path: "novonegocio",
+        element: <Novonegocio />
       },
     ]
   }

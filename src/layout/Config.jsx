@@ -34,8 +34,8 @@ const Config = ({ isVisible, toggleVisibility, isdark, setisdark}) => {
               <div className="escolhatema">
                 <span>Tema escuro</span>
                 <Temas ischecked={isdark} heandlechange={() => setisdark(!isdark)} />
-              </div>
-              <div className="links">
+              </div> // setisdark=
+              <div className="links"> 
                 <ul>
                 <li className='lipers'>
                 <a href=""><FaArrowUpRightFromSquare /> GitHub <FaGithub /></a>

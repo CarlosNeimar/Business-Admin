@@ -19,13 +19,12 @@ import { CiCircleMore } from "react-icons/ci";
 
 
 
-const Navbar = ( ) => {
+const Navbar = ({isdark, setisdark} ) => {
 
 
   const [isConfigVisible, setIsConfigVisible] = useState(false);
 
 
-  const [isdark, setisdark] = useState(false);
 
 
   const toggleConfigVisibility = () => {
@@ -49,7 +48,7 @@ const Navbar = ( ) => {
                   <Link className="opcoes" to="/dashboard"><MdManageAccounts className="icone"/><span className="nav-item">Profile</span></Link>
                 </li>
                 <li>
-                  <Link className="opcoes" to="/dashboard"> <MdAddBusiness className="icone"/><span className="nav-item">Novo negocio</span></Link>
+                  <Link className="opcoes" to="/Novonegocio"> <MdAddBusiness className="icone"/><span className="nav-item">Novo negocio</span></Link>
                 </li>
                 <li>
                   <Link className="opcoes" to="/dashboard"><FaChartLine className="icone"/><span className="nav-item">Análise</span></Link>
@@ -65,9 +64,7 @@ const Navbar = ( ) => {
         </nav>
 
         <Config isVisible={isConfigVisible}
-         toggleVisibility={toggleConfigVisibility}
-         isdark={isdark}
-         setisdark={setisdark}/>
+         toggleVisibility={toggleConfigVisibility} isdark={isdark} setisdark={setisdark}/>
         </>
     )
 

@@ -1,16 +1,15 @@
 import './App.css'
-import Navbar from './layout/Navbar';
+import React, { useState } from 'react';
 import { Outlet } from "react-router-dom";
 
 function App() {
 
+
+
   return (
     <>
       <div>
-        < Navbar />
-        <h1>Business Admin</h1>
         <Outlet />
-        <p>Footer</p>
       </div>
     </>
   )

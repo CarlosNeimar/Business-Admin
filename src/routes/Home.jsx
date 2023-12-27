@@ -1,9 +1,12 @@
 import React from "react";
+import Start from "./Home-sections/Start";
+import Irdash from "./Home-sections/Irdash";
 
 const Home = () => {
     return (
         <div>
-            <h1>Está será a home</h1>
+            <Start/>
+            <Irdash />
         </div>
     )
 }
