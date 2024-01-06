@@ -1,10 +1,34 @@
 import "./Novotype.css"
+import React, { useState } from "react";
 import { LiaBusinessTimeSolid } from "react-icons/lia";
 import { MdOutlineAddBusiness } from "react-icons/md";
 import Form from "../Novonegocio-tipo/Form";
 
 
+
+
 const Novotype = ({ isdark, setisdark }) => {
+
+    const [existencia, setexistencia] = useState(3);
+
+    const negocioexistente = () => {
+        setexistencia(1);
+        scrollpagina();
+    }
+
+    const negocionaoexistente = () => {
+        setexistencia(2);
+        scrollpagina();
+    }
+
+    const scrollpagina = () => {
+        window.scrollTo({
+            top: 650,
+            behavior: 'smooth',
+          });
+    }
+
+    
 
     return (
         <div data-tema={isdark ? "dark" : "light"}>
@@ -15,6 +39,7 @@ const Novotype = ({ isdark, setisdark }) => {
                             <h1>O seu negocio já existe ?</h1>
                         </div>
                         <div className="artnegocios">
+                            <button className="nochange" onClick={negocioexistente}>
                             <div className="cardnegocios">
                                 <div className="titlecard">
                                     <div className="cabecalhocard">
@@ -26,6 +51,8 @@ const Novotype = ({ isdark, setisdark }) => {
                                     </div>
                                 </div>
                             </div>
+                            </button>
+                            <button className="nochange" onClick={negocionaoexistente}>
                             <div className="cardnegocios">
                                 <div className="titlecard">
                                     <div className="cabecalhocard">
@@ -37,15 +64,17 @@ const Novotype = ({ isdark, setisdark }) => {
                                     </div>
                                 </div>
                             </div>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <Form />
+            <Form existencia={existencia} setexistencia={setexistencia}/>
         </div>
     )
 
 
 }
+
 
 export default Novotype

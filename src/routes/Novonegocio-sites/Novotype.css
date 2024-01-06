@@ -64,6 +64,7 @@
     height: 400px;
     align-items: center;
     text-align: center;
+    justify-content: center;
     color: #222;
     transition: color 0.3s ease-in-out;
 }
@@ -80,4 +81,10 @@
 }
 .cardnegocios:hover .iconetype{
     color: white;
+}
+
+.nochange{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
