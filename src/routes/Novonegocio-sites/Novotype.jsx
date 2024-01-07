@@ -13,13 +13,13 @@ const Novotype = ({ isdark, setisdark }) => {
 
     const negocioexistente = () => {
         setexistencia(1);
-        scrollpagina();
-    }
+        setTimeout(scrollpagina, 100);
+        }
 
     const negocionaoexistente = () => {
         setexistencia(2);
-        scrollpagina();
-    }
+        setTimeout(scrollpagina, 100);
+        }
 
     const scrollpagina = () => {
         window.scrollTo({

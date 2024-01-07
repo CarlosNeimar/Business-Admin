@@ -1,0 +1,79 @@
+.cardform {
+    width: 1000px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: var(--bg-contrast-secondary);
+    margin-bottom: 40px;
+    transition: background-color 250ms ease-in-out;
+    overflow: hidden;
+    color: var(--bg-primary);
+}
+
+.infoprin {
+    background-color: var(--bg-contrast);
+    width: 40%;
+    height: 100%;
+
+}
+
+.infoprin form {
+    padding-top: 30px;
+    display: flex;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.infoprin h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.infoprin form ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 70%;
+    align-items: baseline;
+}
+
+.infoprin form li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.infoprin form input {
+    margin-left:10px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--bg-primary);
+    border-width: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 90%;
+    margin-top: 20px;
+    color: var(--bg-primary);
+    font-size: large;
+    text-align: center;
+}
+
+.infoprin form label {
+    font-size: x-large;
+}
+
+#verba::before{
+    
+}

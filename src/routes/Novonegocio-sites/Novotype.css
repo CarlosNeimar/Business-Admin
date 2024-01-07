@@ -3,6 +3,8 @@
     height: 100vh;
     background-color: var(--bg-primary);
     color: var(--text);
+    transition: background-color 250ms ease-in-out;
+
 }
 
 .contentnew{
@@ -87,4 +89,5 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    background-color: transparent;
 }
