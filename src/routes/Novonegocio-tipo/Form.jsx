@@ -20,9 +20,9 @@ const Form = ({ existencia, setexistencia}) => {
         <div className='areaform'>
         <div className="title">
           <h1>Vamos criar seu negocio !</h1>
-          </div>
           <div className="formularionegocio">
             <Novo />
+          </div>
           </div>
         </div>
       )}
