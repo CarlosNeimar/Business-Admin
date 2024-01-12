@@ -14,6 +14,9 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+
 @Entity
 @Table(name = User.TABLE_NAME)
 public class User {
@@ -31,6 +34,7 @@ public class User {
     @Column(name = "id", unique = true)
     private Long id;
 
+    @JsonProperty(access = Access.WRITE_ONLY)
     @Column(name = "username", length = 100, nullable = false, unique = true)
     @NotNull(groups = Criarusuario.class)
     @NotEmpty(groups = Criarusuario.class)
