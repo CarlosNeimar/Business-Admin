@@ -8,6 +8,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -50,7 +51,9 @@ public class User {
     @Column(name = "type")
     private boolean type;
 
-    // private List<Business> business = new ArrayList<Business>();
+
+    @OneToMany(mappedBy = "user")
+    private List<Business> business = new ArrayList<Business>();
 
     public User() {
     }
@@ -98,6 +101,16 @@ public class User {
         this.type = type;
     }
 
+
+    public List<Business> getBusiness() {
+        return this.business;
+    }
+
+    public void setBusiness(List<Business> business) {
+        this.business = business;
+    }
+
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -111,14 +124,22 @@ public class User {
         if (this == obj) {
             return true;
         }
-        if (obj == null || getClass() != obj.getClass()) {
+        if (obj == null ) {
             return false;
         }
-        User user = (User) obj;
-        return Objects.equals(id, user.id) &&
-                Objects.equals(username, user.username) &&
-                Objects.equals(password, user.password) &&
-                Objects.equals(type, user.type);
+        if (!(obj instanceof User)) {
+            return false;
+        }
+        User other = (User) obj;
+        if(this.id == null)
+            if (other.id != null) 
+                return false;
+             else if (!this.id.equals(other.id)) 
+                return false;
+        return Objects.equals(this.id, other.id) &&
+                Objects.equals(this.username, other.username) &&
+                Objects.equals(this.password, other.password) &&
+                Objects.equals(this.type, other.type);
     }
 
 }
