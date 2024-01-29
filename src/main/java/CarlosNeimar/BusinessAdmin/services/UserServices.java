@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import CarlosNeimar.BusinessAdmin.Models.User;
-import CarlosNeimar.BusinessAdmin.repositories.BusinessRepository;
+// import CarlosNeimar.BusinessAdmin.repositories.BusinessRepository;
 import CarlosNeimar.BusinessAdmin.repositories.UserRepository;
 import jakarta.transaction.Transactional;
 
@@ -16,8 +16,8 @@ public class UserServices {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private BusinessRepository businessRepository;
+    // @Autowired
+    // private BusinessRepository businessRepository;
 
     public User findid(Long id) {
         Optional<User> user = this.userRepository.findById(id);
@@ -31,7 +31,7 @@ public class UserServices {
     public User createuser(User obj) {
         obj.setId(null);
         obj = this.userRepository.save(obj);
-        this.businessRepository.saveAll(obj.getBusiness());
+        // this.businessRepository.saveAll(obj.getBusiness());
         return obj;
     }
 
